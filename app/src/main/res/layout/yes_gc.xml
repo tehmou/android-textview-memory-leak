@@ -3,18 +3,17 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="vertical"
-    android:tag="yes_gc">
-
-    <!-- If one of these views is removed, the GC starts working again. -->
-    <View
+    android:tag="yes_gc"
+    android:background="#ffff00">
+    <FrameLayout
         android:layout_width="fill_parent"
-        android:layout_height="100dp"
-        android:background="#00ffff"/>
-
-    <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:background="#0000ff"/>
-
+        android:layout_height="600dp"
+        android:background="#f00060">
+        <!-- Part of the TextView is showing in the containing FrameLayout -->
+        <TextView
+            android:layout_marginTop="500dp"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#0000ff"/>
+    </FrameLayout>
 </com.example.app.TrackingView>

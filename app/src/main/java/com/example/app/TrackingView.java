@@ -3,11 +3,12 @@ package com.example.app;
 import android.content.Context;
 import android.util.AttributeSet;
 import android.util.Log;
+import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 
 // If the base class is changed from LinearLayout to something
 // else the gc starts working.
-public class TrackingView extends LinearLayout {
+public class TrackingView extends FrameLayout {
     static final private String TAG = TrackingView.class.getCanonicalName();
 
     public TrackingView(Context context, AttributeSet attrs) {
