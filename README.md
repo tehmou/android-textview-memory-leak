@@ -9,6 +9,12 @@ whole screen should become green. However, on some devices the left side
 of the screen stays red, indidating a memory leak.
 
 
+Attached is com.example.app.4.3.MAT.hprof which contains a memory dump
+from a 4.3 device converted into Eclipse MAT format for your viewing.
+If you trace the GC roots you can see that one of the TrackingViews is
+tied to the application view root by the TextView it contains.
+
+
 Tested devices:
 
 leaks:
